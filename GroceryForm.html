@@ -1,0 +1,203 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>grocery form</title>
+
+<style>
+<div {height:10px;width:10%}
+</style>
+
+<link rel="stylesheet" type="text/css" href="grocery.css">
+<script type="text/javascript" src="formvalidation.js">
+</script>
+
+
+</head>
+<body bgcolor="lightskyblue">
+<h1><div style="color: rgb(44, 6, 150);"><center>Welcome to Manish Grocery Store 🛒  &nbspHere is your order form ⬇
+</center></div></h1>
+
+<center><img src="groc.png" style="width:200px;height:200px;vertical-align:middle;margin:0px 150px"></center>
+
+<form>
+<table border="0">
+<tr>
+<td>Type of order:  </td><br>
+<td><input type="radio" name="type" value="pick-up" checked>Delivery<br><input type="radio" name="type" value="delivery" >Pick-up</td>
+</tr>
+
+
+<tr>
+<td>Pick-up/Delivery date:  </td>
+<td><input type="date" id="date" required></td>
+</tr>
+
+<tr>
+<td>Delivery/Pick-up time:  </td>
+<td><input type="time" id="time" required></td>
+</tr>
+
+<tr>
+<td><strong><div >Customer's detail:-</strong></div></td>
+</tr>
+
+<tr>
+<td>Name:  </td>
+<td><input id="field1" type="text" name="first name" placeholder="first name" required onblur="fieldname();"/><span id="field11"></span></td>
+<td><input id="field4" type="text" name="last name" placeholder="last name" required onblur="fieldname2();"/><span id="field44"></span></td>
+</tr>
+
+<tr>
+<td>Email:  </td>
+<td><input type="email" name="email" multiple placeholder="ex: xyz123@pqr.com"></td>
+</tr>
+
+<tr>
+<td>Mobile No.  </td>
+<td><input id="field2" type="number" placeholder="xxx-xxx-xxxx" size="10" required onblur="fieldnumber();"/><span id="field22"></span></td>
+</tr>
+
+<tr>
+<td>Delivery address:  </td>
+<td><input type="text" id="field3" placeholder="street address 1" required onblur="fieldadd();"/><span id="field33"></span></td>
+</tr>
+
+<tr>
+<td>                   </td>
+<td><input type="text" placeholder="street address2"></td>
+</tr>
+
+<tr>
+<td>                   </td>
+<td><input type="text" placeholder="city"></td>
+<td><input type="text" placeholder="state"></td>
+</tr>
+
+<tr>
+<td>Pincode:  </td>
+<td><input  type="number" id="field5" placeholder="pincode" size="6" onblur="fieldpincode();"/><span id="field55"></span></td>
+</tr>
+
+<tr>
+<td><strong><div >Grocery product's:-</strong></div></td>
+</tr>
+
+
+
+<tr>
+<td><input type="checkbox" name="food" value="Biscuits" checked>Biscuits</td>
+<td><input type="number" name="quantity" placeholder="enter quantity"></td>
+<td>type:<select name="type" id="type">
+    <option value="select">select</option>
+    <option value="Orio">Orio</option>
+    <option value="Marie-gold">Marie-gold</option>
+	  <option value="Parle-G">Parle-G</option>
+	  <option value="Good Day">Good Day</option>
+    <option value="Patanjali Biscuits">Patanjali Biscuits</option>
+  </select>
+  </td>
+  
+    <td>Size:<select name="size" id="size">
+  <option value="select">select</option>
+  <option value="small">small</option>
+  <option value="medium">medium</option>
+  <option value="large">large</option>
+  </select>
+  </td>
+</tr>
+
+<tr>
+<td><input type="checkbox" name="food" value="Grocery">Grocery</td>
+<td><input type="number" name="quantity" placeholder="enter quantity"></td>
+<td>type:<select name="type" id="type">
+    <option value="select">select</option>
+    <option value="Sugar">Sugar</option>
+    <option value="Wheat">Wheat</option>
+    <option value="Rice">Rice</option>
+	 <option value="Cashew nuts">Cashew nuts</option>
+	 <option value="Peanuts">Peanuts</option>
+    
+  </select>
+  </td>
+  
+    <td>Size:<select name="Weight" id="Weight">
+  <option value="select">select</option>
+  <option value="1kg_pack">1kg_pack</option>
+  <option value="2kg_pack">2kg_pack</option>
+<option value="5kg_pack">5kg_pack</option>
+  </select>
+  </td>
+</tr>
+
+<tr>
+<td><input type="checkbox" name="Health-care" value="Health-care">Health-care</td>
+<td><input type="number" name="quantity" placeholder="enter quantity"></td>
+<td>type:<select name="type" id="type">
+    <option value="select">select</option>
+    <option value="Hand-Wash">Hand-Wash</option>
+    <option value="wild stone">wild stone</option>
+	<option value="Soap-Lux">Soap-lux</option>
+	<option value="Shampoo-dove">Shampoo-dove</option>
+    <option value="Shampoo-clinic plus">Shampoo-clinic plus</option>
+  </select>
+  </td>
+  
+    <td>quantity:<select name="quantity" id="quantity">
+  <option value="select">select</option>
+  <option value="packof2">packof2</option>
+  <option value="packof3">packof3</option>
+  <option value="packof6">packof6</option>
+  </select>
+  </td>
+</tr>
+
+
+<tr>
+<td><strong><div >Method of payment: </strong></div></td>"
+<td><select name="pay" id="pay">
+<option value="select">select<option></option>
+<option value="credit card">credit card<option>
+<option value="cash on delivery">cash on delivery<option>
+<option value="phone pay">phone pay<option>
+<option value="google pay">google pay<option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><strong><div >Do you have any additional information or instructions? </strong></div><br><input type="text" name="message"></td>
+</tr>
+
+<tr>
+<td><strong><div>would you like to write a messeage?if yes! then please write. </strong></div><br><input type="text" name="message"></td>
+</tr>
+
+<tr>
+<td><strong><div >Event type: </div></td>
+<td><input type="radio" name="event" value="birthday" checked >birthday<br><input type="radio" name="event" value="party" >party</td>
+<td><input type="radio" name="event" value="no-event" >no-event<br><input type="radio" name="event" value="other" >other</td>
+</tr>
+
+
+</table>
+
+<p class="reminder"><strong><div style="color: rgb(214, 41, 130);" >♦ Important Reminders:-</strong></div><br>
+
+
+*After submitting this form, we'll check your order and we'll contact you within 12 hours for confirmation.<br>
+*The turn around time depends on the ordered items.<br>
+*Taxes and Shipping Fee will be applied for every order.</p>
+
+<p class="reciept">
+<strong><div style="background-color:rgb(255, 198, 239)">THE PAY RECIEPT YOU WILL GET, WHEN YOU GET YOUR ORDER IN YOUR HAND!! </strong></div></p> <br>
+
+<center><button onclick="alert('your order has been successfully recorded!!!')" style="background-color: rgba(4, 92, 244, 0.929); color: white;">Order Now</button></center>
+
+<br> <br>
+<p class="ttt"><center> THANK YOU ❤️ </center></p>
+
+</form>
+</body>
+</html>
